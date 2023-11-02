@@ -17,6 +17,11 @@
     <title>Welkom</title> 
 </head>
 <body>
+    <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </a>
     <nav class="sidebar close">
         <header>
             <div class="image-text">
@@ -138,13 +143,42 @@
 
 
     <section class="home">
-        <h1 class="welcome-title">Welkom bij mijn.oba</h1>
+        <h1 class="welcome-title">
+            <span class="large-text"> Welkom</span>
+            <span class="small-text"> bij</span>
+            <span class="smallred-text"> mijn.oba</span>
+        </h1>
         
-    </section>
-    <div class="search-container">
-        <input type="text" id="search-input" placeholder="Search...">
+        <section class="search-container">
+            <input type="text" id="search-input" class="rounded-input" placeholder="Zoek hier .boeken...">
+            <button id="search-button"> Zoek</button>
+        </section>
         <ul id="search-results"></ul>
-    </div>
+        <Button id="boeken-button">Boeken om later te beijken</Button>
+        <article class="boek-details">
+            <ul class="ul-blok">
+                <li class="boek-blok"> 
+                    <img class="image-boek" src="./image/book-1.png" alt="book-1">
+                
+                </li>
+                <li class="boek-blok">
+                    <img class="image-boek" src="./image/book-10.png" alt="book-10">
+                
+                    </li>
+                <li class="boek-blok">
+                    <img class="image-boek" src="./image/book1.jpg" alt="book1">
+                    
+                    </li>
+                <li class="boek-blok">
+                    <img class="image-boek" src="./image/book7.jpg" alt="book7">
+                  
+                </li>
+                <li class="boek-blok">
+                    <img class="image-boek" src="./image/book9.jpg" alt="book9">
+                   </li>
+            </ul>
+        </article>
+    </section>  
 </body>
 </html>
- 
+  

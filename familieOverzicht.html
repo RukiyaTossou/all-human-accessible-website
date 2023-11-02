@@ -145,6 +145,10 @@
     <!-- Voor elke gebruiker een eigen section -->
     <section class="gebruiker"> 
         <h2> Ouder 1 (Beheerder) </h2>
+        <div class="scroll-buttons">
+            <button class="scroll-links">◀</button>
+            <button class="scroll-rechts">▶</button>
+        </div>
         <h3> Geleende boeken: </h3>
         <ul class="ul-blok">
             <li class="boek-blok"> 
@@ -168,7 +172,7 @@
                 <p> Naam Auteur Inleverdatum </p></li>
         </ul>
           <!-- parameters meegegevn met een uniek id -->
-        <h4 onclick="toggleList('toggle-icon1', 'borrowing-list1')">Uitleengeschiedenis <span id="toggle-icon1">+</span></h4>
+        <h4 onclick="toggleList('toggle-icon1', 'borrowing-list1')" class="uitleen">Uitleengeschiedenis <span id="toggle-icon1">+</span></h4>
         <article >
             <ul class="ul-simpel" id="borrowing-list1">
                 <li> Naam boek | Naam Auteur | datum-geleend | datum-terrugebracht | </li>
@@ -180,6 +184,11 @@
 
     <section class="gebruiker">
         <h2> Ouder 2 </h2>
+        <!-- <div class="scroll-buttons">
+            <button class="scroll-links3">◀</button>
+            <button class="scroll-rechts3">▶</button>
+        </div>
+         -->
         <ul class="ul-blok">
             <li class="boek-blok">
                 <img class="image-boek" src="./image/book-2.png" alt="book-2">
@@ -211,6 +220,7 @@
 
     <section class="gebruiker">
         <H2> kind1 </H2>
+     
         <ul class="ul-blok">
             <li class="boek-blok">
                 <img class="image-boek" src="./image/book-3.png" alt="book-3">
@@ -233,6 +243,7 @@
                  <p> naam auteur inleverdatum </p>
                 </li>
         </ul>
+      
           <!-- parameters meegegevn met een uniek id -->
         <h4 onclick="toggleList('toggle-icon3', 'borrowing-list3')">Uitleengeschiedenis <span id="toggle-icon3">+</span></h4>
         <article >
@@ -246,6 +257,7 @@
 
     <section class="gebruiker">
         <H2> kind2 </H2>
+    
         <ul class="ul-blok">
             <li class="boek-blok"><img class="image-boek" src="./image/book3.jpg" alt="book3"><P>naam Auteur inleverdatum</p></li>
             <li class="boek-blok"><img class="image-boek" src="./image/book5.jpg" alt="book5"><P>naam Auteur inleverdatum</p></li>
@@ -260,7 +272,7 @@
                 <li> Naam boek | Naam Auteur | datum-geleend | datum-terrugebracht |</li>
                 <li> Naam boek | Naam Auteur | datum-geleend | datum-terrugebracht |</li>
             </ul>
-        </article>
+        </article>  
     </section>
 
     </section>

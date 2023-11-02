@@ -305,6 +305,7 @@ body.dark .mode .sun-moon i.moon{
     border-radius: 6px;
     cursor: pointer;
 }
+
 .toggle-switch .switch{
     position: relative;
     height: 22px;
@@ -341,6 +342,7 @@ body.dark .switch::before{
     background-color: var(--body-color);
     transition: var(--tran-05);
 }
+
 .home .text{
     font-size: 30px;
     font-weight: 500;
@@ -355,7 +357,6 @@ body.dark .switch::before{
 }
 body.dark .home .text{
     color: var(--text-color);
-
 }
 
 /* MIJN CODE BEGINT HIER */
@@ -372,9 +373,48 @@ body.dark .home .text{
     /* scrol element maken */
     display: flex;
     overflow-x: scroll;
-   
 }
+.uitleen{
+    background-color: #ffffff;
+    border-radius: 30px;
+    border-width: 0;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+    color: #030303;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block;
+    height: 2em;
+    padding: 0.3em 1.5em 0.3em 1.5em;
+    transition: all 200ms;
 
+}
+/* Left arrow button */
+.scroll-links, .scroll-rechts {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+  }
+  
+  .scroll-links {
+    left: 0;
+    transform: translateY(-50%);
+  }
+  
+  .scroll-rechts {
+    right: 0;
+    transform: translateY(-50%);
+  }
+  
+/* Hover effect pijltjes */
+.scroll-links:hover, .scroll-rechts:hover {
+    background-color: rgb(197, 13, 13); 
+  } 
 .boek-blok{
     /* li voor de boeken  */
     list-style-type: none;
@@ -388,12 +428,11 @@ body.dark .home .text{
     "image tekst";
 
     /* opmaak  */
-
-  
     height: 15em;
     max-width: 20em;
     margin:1em 2em 3em ;
 }
+
 
   /* tekts info van boek */
   p{
@@ -403,7 +442,6 @@ body.dark .home .text{
     min-width: 10em;
     margin-top: -0.1em;
     padding:2em 2em;
- 
 }
 
 /* plaatje van het boek */
@@ -421,7 +459,6 @@ h1{
     color: white;
     background-color: var(--primary-color);
     width: 100%;
-  
 }
 
 h4 {
@@ -434,8 +471,7 @@ h4 {
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    
+    align-items: center;  
 }
 
 .ul-simpel{
@@ -464,19 +500,11 @@ h4 {
     margin: 5px 0;
          /* Add margin to control vertical spacing (4px top and bottom) */
 }
+
 /* .image-text{
     background-color: red;
 } */
 
-.welcome-title{
-    color: #000;
-
-    font-family: Arial Rounded MT Bold;
-    font-size: 32px;
-    font-style: normal;
-        font-weight: 400;
-    line-height: normal;
-}
 /* mobile */
 @media(max-width:767px){
     
@@ -498,8 +526,7 @@ h4 {
     .oba-logo{
         padding-top: 0.5em;
         padding-left: 1em
-    }
-    
+    }   
 }
 
 /* tablet */
@@ -525,8 +552,7 @@ h4 {
     .oba-logo{
         padding-top: 0.5em;
         padding-left: 1em
-    }
-    
+    }   
 }
     
 /* desktop */
@@ -556,8 +582,4 @@ h4 {
         padding-top: 0.5em;
         padding-left: 3em
     }
-    
-
-    
-
 }

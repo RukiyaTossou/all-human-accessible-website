@@ -357,18 +357,137 @@ body.dark .home .text{
     color: var(--text-color);
 
 }
+/* HIER BEGINT MIJN EIGEN CODE */
 
+/* Toggle button */
 
-
-.welcome-title{
-    color: #000;
-
-    font-family: Arial Rounded MT Bold;
-    font-size: 32px;
-    font-style: normal;
-        font-weight: 400;
-    line-height: normal;
+.toggle-button {
+    position: relative;
+    background-color: var(--primary-color-light);
+    display: flex; /* Add display: flex */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.7em;
+    height: 3em;
+    padding-left: 0.3em;
+    cursor: pointer; 
 }
+
+.bar {
+    height:0.4em;
+    width: 2.4em;
+    background-color:var(--primary-color);
+    border-radius: 3px; 
+    margin: 5px 0;
+        
+}
+
+.home {
+    margin-left:1.2em;
+    
+}
+
+
+.large-text {
+    font-size: 40px;
+}
+
+.small-text {
+    font-size: 30px;
+}
+
+.smallred-text {
+    color: red;
+}
+
+/* zoeken  */
+.search-container {
+    width: 15em;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+ 
+}
+p{
+        grid-area: tekst;
+        background-color: var(--sidebar-color);
+        height: 15em;
+        min-width: 10em;
+        margin-top: -0.1em;
+        padding:2em 2em;
+    
+
+
+}
+#boeken-button{
+    background-color: #ffffff;
+    border-radius: 30px;
+    border-width: 0;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+    color: #030303;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block;
+    height: 2em;
+    padding: 0.3em 1.5em 0.3em 1.5em;
+    transition: all 200ms;
+   position: relative;
+   left: 42em;
+
+}
+.image-boek{
+        grid-area: image;
+        object-fit: cover;
+        height: 15em;
+        width: 10em;
+        position: relative;
+        left:25em ;
+
+}
+
+
+
+
+
+#search-input {
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 35px;
+
+}
+
+#search-results {
+    list-style: none;
+    padding: 0;
+}
+
+#search-results li {
+    padding: 5px;
+    border: 1px solid #c4c1c1;
+    margin: 5px;
+    cursor: pointer;
+}
+#search-button {
+    background-color: #ffffff;
+    border-radius: 30px;
+    border-width: 0;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+    color: #030303;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block;
+    height: 2em;
+    padding: 0.3em 1.5em 0.3em 1.5em;
+    transition: all 200ms;
+   
+}
+
+#search-button:hover {
+    background-color: var(--primary-color);
+   
+}
+
+
 
 
 /* mobile */
@@ -422,6 +541,8 @@ body.dark .home .text{
     }
     
 }
+
+
     
 /* desktop */
 @media(min-width:1280px){
@@ -448,9 +569,15 @@ body.dark .home .text{
 }
     .oba-logo{
         padding-top: 0.5em;
-        padding-left: 3em
+        padding-left: 4em
     }
     
+    .search-container {
+        width: 25em;
+        margin: 0 auto;
+        text-align: center;
+    }
+     
 
     
 
