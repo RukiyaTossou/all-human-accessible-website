@@ -362,11 +362,8 @@ body.dark .home .text{
 /* MIJN CODE BEGINT HIER */
 
 .gebruiker{
-    background-color:var(--primary-color-light);
     padding:0 2em 2em; 
     margin-bottom: 2em;
-    border-bottom: solid;
-    border-color: var(--primary-color);
 }
 
 .ul-blok{
@@ -374,6 +371,11 @@ body.dark .home .text{
     display: flex;
     overflow-x: scroll;
 }
+
+.ul-blok::-webkit-scrollbar {
+    display: none; /* Voor Chrome/Safari */
+}
+
 .uitleen{
     background-color: #ffffff;
     border-radius: 30px;
@@ -386,7 +388,6 @@ body.dark .home .text{
     height: 2em;
     padding: 0.3em 1.5em 0.3em 1.5em;
     transition: all 200ms;
-
 }
 /* Left arrow button */
 .scroll-links, .scroll-rechts {
@@ -431,17 +432,24 @@ body.dark .home .text{
     height: 15em;
     max-width: 20em;
     margin:1em 2em 3em ;
+    /* border-style: solid;
+    border-color: #020024;
+    border-width: 1px; */
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.4);
 }
-
 
   /* tekts info van boek */
   p{
     grid-area: tekst;
-    background-color: var(--sidebar-color);
+    /* background-color: var(--sidebar-color); */
     height: 15em;
     min-width: 10em;
     margin-top: -0.1em;
     padding:2em 2em;
+}
+.book-title{
+    font-size: 20px;
+    font-weight: bold;
 }
 
 /* plaatje van het boek */
@@ -450,13 +458,14 @@ body.dark .home .text{
     object-fit: cover;
     height: 15em;
     width: 10em;
+    
 }
 
 h1{
     font-style: bold;
     padding-left: 3em;
     font-size: 25px; 
-    color: white;
+    color: rgb(0, 0, 0);
     background-color: var(--primary-color);
     width: 100%;
 }
@@ -581,5 +590,13 @@ h4 {
     .oba-logo{
         padding-top: 0.5em;
         padding-left: 3em
+    }
+    .scroll-links{
+        margin-left: 5em;
+        
+    }
+    .scroll-rechts{
+        margin-right: 3em;
+
     }
 }

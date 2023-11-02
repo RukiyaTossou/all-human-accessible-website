@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const scrollLeftButton = document.querySelector(".scroll-links");
     const scrollRightButton = document.querySelector(".scroll-rechts");
 
-    let scrollAmount = 100; // het aantal pixels om te scrollen
+    let scrollAmount = 400; // het aantal pixels om te scrollen
 
     scrollLeftButton.addEventListener("click", function () {
         ulBlok.scrollLeft -= scrollAmount;
@@ -125,3 +125,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// scroll bar
+document.querySelector(".gebruiker").addEventListener("scroll", function() {
+    this.style.overflow = "hidden";
+});

@@ -138,9 +138,11 @@
 
     </nav>
     <section class="home">
-        <img class="oba-logo" src="./image/oba_20.png" alt="oba_20">
+        <img class="oba-logo" src="./image/oba_20.png" alt="oba-logo-rood">
             <!-- HIER BEGINT MIJN EIGEN CODE -->
-    <header><h1>Familie Sanders</h1></header>
+    <header>
+        <h1>Familie Reijden</h1>
+    </header>
 
     <!-- Voor elke gebruiker een eigen section -->
     <section class="gebruiker"> 
@@ -149,27 +151,27 @@
             <button class="scroll-links">◀</button>
             <button class="scroll-rechts">▶</button>
         </div>
-        <h3> Geleende boeken: </h3>
+        <h3> Huidige boeken </h3>
         <ul class="ul-blok">
             <li class="boek-blok"> 
                 <img class="image-boek" src="./image/book-1.png" alt="book-1">
-                <P> The art city Auteur inleverdatum </p>
+                <P> <span class="book-title">The art city</span><br> Symbol icon<br>Inleverdatum: 08-10-2023 </p>
                 </li>
             <li class="boek-blok">
                 <img class="image-boek" src="./image/book-10.png" alt="book-10">
-                <P> Naam Auteur Inleverdatum </p>
+                <P> <span class="book-title">Reto</span><br>spant<br> Inleverdatum: 20-01-2024 </p>
                 </li>
             <li class="boek-blok">
                 <img class="image-boek" src="./image/book1.jpg" alt="book1">
-                <P> Naam Auteur Inleverdatum </p>
+                <P><span class="book-title">Sin eater</span> <br> Megan Campisi <br>Inleverdatum: 02-05-2024 </p>
                 </li>
             <li class="boek-blok">
                 <img class="image-boek" src="./image/book7.jpg" alt="book7">
-                <p> Naam Auteur Inleverdatum </p>
+                <p> <span class="book-title">Late night toughts</span><br> Vee<br>Inleverdatum: 15-05-2024</p>
             </li>
             <li class="boek-blok">
                 <img class="image-boek" src="./image/book9.jpg" alt="book9">
-                <p> Naam Auteur Inleverdatum </p></li>
+                <p>  <span class="book-title">Wilder girls</span><br>Rory Power<br>Inleverdatum: 26-11-2024</p></li>
         </ul>
           <!-- parameters meegegevn met een uniek id -->
         <h4 onclick="toggleList('toggle-icon1', 'borrowing-list1')" class="uitleen">Uitleengeschiedenis <span id="toggle-icon1">+</span></h4>
@@ -192,23 +194,24 @@
         <ul class="ul-blok">
             <li class="boek-blok">
                 <img class="image-boek" src="./image/book-2.png" alt="book-2">
-                 <P> Naam Auteur Inleverdatum</p>
+                 <P> <span class="book-title">Titel</span> <br> Auteur Inleverdatum</p>
+
             </li>
             <li class="boek-blok">
                 <img class="image-boek" src="./image/book-4.png" alt="book-4">
-                <P> Naam Auteur Inleverdatum</p>
+                <P> <span class="book-title">Titel</span><br> Auteur Inleverdatum</p>
                 </li>
             <li class="boek-blok">
                 <img class="image-boek" src="./image/book-5.png" alt="book-5">
-                <p> Naam Auteur Inleverdatum</p>
+                <p> <span class="book-title">Titel</span> <br>Auteur Inleverdatum</p>
             </li>
             <li class="boek-blok">
                 <img class="image-boek" src="./image/book-9.png" alt="book-9">
-                <p> Naam Auteur Inleverdatum</p>
+                <p> <span class="book-title">Titel</span><br> Auteur Inleverdatum</p>
             </li>
         </ul>
           <!-- parameters meegegevn met een uniek id -->
-        <h4 onclick="toggleList('toggle-icon2', 'borrowing-list2')">Uitleengeschiedenis <span id="toggle-icon2">+</span></h4>
+        <h4 onclick="toggleList('toggle-icon2', 'borrowing-list2')" class="uitleen">Uitleengeschiedenis <span id="toggle-icon2">+</span></h4>
         <article >
             <ul class="ul-simpel" id="borrowing-list2">
                 <li> Naam boek | Naam Auteur | datum-geleend | datum-terrugebracht | </li>
